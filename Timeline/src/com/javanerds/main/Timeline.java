@@ -28,7 +28,9 @@ public class Timeline implements Runnable{
     }
 
     public void tick(){
-
+        if (Scene.getScene() != null) {
+            Scene.getScene().tick();
+        }
     }
 
     public void render(){
