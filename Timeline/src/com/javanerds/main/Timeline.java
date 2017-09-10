@@ -1,6 +1,5 @@
 package com.javanerds.main;
 
-import com.javanerds.scenes.First;
 import com.javanerds.scenes.Scene;
 
 import java.awt.Graphics;
@@ -15,8 +14,6 @@ public class Timeline implements Runnable{
     private int height;
     private String title;
 
-    private First first;
-
     private BufferStrategy bs;
     private Graphics g;
 
@@ -28,10 +25,6 @@ public class Timeline implements Runnable{
 
     private void init(){
         window = new Window(title, width, height);
-
-        first = new First();
-
-        Scene.setScene(first);
     }
 
     public void tick(){
@@ -100,7 +93,6 @@ public class Timeline implements Runnable{
 
             if (timer >= 1000000000) {
                 System.out.println(ticks);
-                System.out.println("Jakob Sucks");
                 //Logger.getInstance().write("" + ticks);
                 ticks = 0;
                 timer = 0;
