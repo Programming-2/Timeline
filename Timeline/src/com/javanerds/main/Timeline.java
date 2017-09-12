@@ -36,6 +36,13 @@ public class Timeline implements Runnable{
         window = new Window(title, width, height);
         Assets.init();
         firstGen = new FirstGen();
+        secondGen = new SecondGen();
+        thirdGen = new ThirdGen();
+        fourthGen = new FourthGen();
+        fifthGen = new FifthGen();
+        sixthGen = new SixthGen();
+        seventhGen = new SeventhGen();
+        eighthGen = new EighthGen();
         Scene.setScene(firstGen);
     }
 
