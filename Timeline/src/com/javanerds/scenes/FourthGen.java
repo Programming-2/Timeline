@@ -2,9 +2,9 @@ package com.javanerds.scenes;
 
 import java.awt.*;
 
-public class ForthGen extends Scene{
+public class FourthGen extends Scene{
 
-    public ForthGen(){
+    public FourthGen(){
 
     }
 
