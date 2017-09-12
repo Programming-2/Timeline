@@ -1,5 +1,7 @@
 package com.javanerds.scenes;
 
+import com.javanerds.main.Assets;
+
 import java.awt.Graphics;
 
 public class FirstGen extends Scene{
@@ -15,6 +17,6 @@ public class FirstGen extends Scene{
 
     @Override
     public void render(Graphics g) {
-
+        g.drawImage(Assets.odyessy, 100, 100, null);
     }
 }

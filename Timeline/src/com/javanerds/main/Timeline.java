@@ -1,6 +1,6 @@
 package com.javanerds.main;
 
-import com.javanerds.scenes.Scene;
+import com.javanerds.scenes.*;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
@@ -17,6 +17,15 @@ public class Timeline implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
+    private FirstGen firstGen;
+    private SecondGen secondGen;
+    private ThirdGen thirdGen;
+    private FourthGen fourthGen;
+    private FifthGen fifthGen;
+    private SixthGen sixthGen;
+    private SeventhGen seventhGen;
+    private EighthGen eighthGen;
+
     public Timeline(String title, int width, int height){
         this.title = title;
         this.width = width;
@@ -25,6 +34,9 @@ public class Timeline implements Runnable{
 
     private void init(){
         window = new Window(title, width, height);
+        Assets.init();
+        firstGen = new FirstGen();
+        Scene.setScene(firstGen);
     }
 
     public void tick(){
