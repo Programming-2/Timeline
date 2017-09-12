@@ -25,6 +25,7 @@ public class Timeline implements Runnable{
     private SixthGen sixthGen;
     private SeventhGen seventhGen;
     private EighthGen eighthGen;
+    private Title titleSlide;
 
     public Timeline(String title, int width, int height){
         this.title = title;
@@ -43,7 +44,8 @@ public class Timeline implements Runnable{
         sixthGen = new SixthGen();
         seventhGen = new SeventhGen();
         eighthGen = new EighthGen();
-        Scene.setScene(firstGen);
+        titleSlide = new Title();
+        Scene.setScene(titleSlide);
     }
 
     public void tick(){
