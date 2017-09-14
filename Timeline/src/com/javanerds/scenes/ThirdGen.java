@@ -25,6 +25,8 @@ public class ThirdGen extends Scene{
 
     @Override
     public void render(Graphics g) {
+        g.setFont(new Font("Comic Sans MS", 1, 20));
+        g.drawString("4", 0, 20);
         g.drawImage(Assets.atari7800, 180, 100, null);
         g.drawImage(Assets.nes, 700, 400, null);
         g.setFont(new Font("Comic Sans MS", 1, 60));

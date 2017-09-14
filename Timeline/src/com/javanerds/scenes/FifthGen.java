@@ -25,6 +25,8 @@ public class FifthGen extends Scene{
 
     @Override
     public void render(Graphics g) {
+        g.setFont(new Font("Comic Sans MS", 1, 20));
+        g.drawString("6", 0, 20);
         g.drawImage(Assets.saturn, 180, 100, null);
         g.drawImage(Assets.playstation, 810, 450, null);
         g.drawImage(Assets.n64, 100, 450, null);
