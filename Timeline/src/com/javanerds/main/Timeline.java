@@ -47,7 +47,7 @@ public class Timeline implements Runnable{
         seventhGen = new SeventhGen();
         eighthGen = new EighthGen();
         titleSlide = new Title();
-        Scene.setScene(titleSlide);
+        Scene.setScene(firstGen);
     }
 
     public void tick(){
