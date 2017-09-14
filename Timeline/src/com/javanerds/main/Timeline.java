@@ -54,6 +54,7 @@ public class Timeline implements Runnable{
         if (Scene.getScene() != null) {
             Scene.getScene().tick();
         }
+        KeyManager.getInstance().tick();
     }
 
     public void render(){

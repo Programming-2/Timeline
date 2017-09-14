@@ -14,6 +14,7 @@ public class Title extends Scene {
 
     @Override
     public void tick() {
+        //System.out.println(KeyManager.getInstance().space);
         if(KeyManager.getInstance().space){
             Scene.setScene(Timeline.getFirstGen());
         }

@@ -28,6 +28,7 @@ public class KeyManager implements KeyListener {
         left = keys[KeyEvent.VK_A];
         space = keys[KeyEvent.VK_SPACE];
         e = keys[KeyEvent.VK_E];
+        System.out.println(up);
     }
 
     @Override
