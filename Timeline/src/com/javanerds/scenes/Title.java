@@ -1,6 +1,9 @@
 package com.javanerds.scenes;
 
-import java.awt.*;
+import com.javanerds.main.KeyManager;
+
+import java.awt.Font;
+import java.awt.Graphics;
 
 public class Title extends Scene {
 
@@ -10,7 +13,9 @@ public class Title extends Scene {
 
     @Override
     public void tick() {
-
+        if(KeyManager.getInstance().space){
+            Scene.setScene();
+        }
     }
 
     @Override

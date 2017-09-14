@@ -1,9 +1,11 @@
 package com.javanerds.main;
 
 import com.javanerds.scenes.*;
+import sun.reflect.CallerSensitive;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
+import java.util.Map;
 
 public class Timeline implements Runnable{
     private Thread thread;
@@ -45,7 +47,7 @@ public class Timeline implements Runnable{
         seventhGen = new SeventhGen();
         eighthGen = new EighthGen();
         titleSlide = new Title();
-        Scene.setScene(titleSlide);
+        Scene.setScene(firstGen);
     }
 
     public void tick(){
@@ -149,4 +151,39 @@ public class Timeline implements Runnable{
         }
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public FirstGen getFirstGen() {
+        return firstGen;
+    }
+
+    public SecondGen getSecondGen() {
+        return secondGen;
+    }
+
+    public ThirdGen getThirdGen() {
+        return thirdGen;
+    }
+
+    public FourthGen getFourthGen() {
+        return fourthGen;
+    }
+
+    public FifthGen getFifthGen() {
+        return fifthGen;
+    }
+
+    public SixthGen getSixthGen() {
+        return sixthGen;
+    }
+
+    public SeventhGen getSeventhGen() {
+        return seventhGen;
+    }
+
+    public EighthGen getEighthGen() {
+        return eighthGen;
+    }
 }
