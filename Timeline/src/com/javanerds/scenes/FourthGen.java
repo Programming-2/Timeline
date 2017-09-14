@@ -17,7 +17,7 @@ public class FourthGen extends Scene{
             Scene.setScene(Timeline.getFifthGen());
         }
         try {
-            Thread.sleep(10);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

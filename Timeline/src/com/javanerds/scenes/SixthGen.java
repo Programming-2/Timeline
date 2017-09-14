@@ -17,7 +17,7 @@ public class SixthGen extends Scene{
             Scene.setScene(Timeline.getSeventhGen());
         }
         try {
-            Thread.sleep(10);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
