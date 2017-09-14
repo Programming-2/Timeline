@@ -1,5 +1,7 @@
 package com.javanerds.scenes;
 
+import com.javanerds.main.Timeline;
+
 import java.awt.*;
 
 public class SixthGen extends Scene{
@@ -10,7 +12,9 @@ public class SixthGen extends Scene{
 
     @Override
     public void tick() {
-
+        if(Timeline.getKey().space) {
+            Scene.setScene(Timeline.getSeventhGen());
+        }
     }
 
     @Override
