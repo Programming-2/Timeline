@@ -18,7 +18,7 @@ public class SecondGen extends Scene{
     @Override
     public void render(Graphics g) {
         g.setFont(new Font("Comic Sans MS", 1, 20));
-        g.drawString("2", 0, 20);
+        g.drawString("3", 0, 20);
         g.drawImage(Assets.atari2600, 300, 150, null);
         g.drawImage(Assets.atari2600games, 300, 400, null);
         g.setFont(new Font("Comic Sans MS", 1, 40));
