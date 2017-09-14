@@ -17,6 +17,8 @@ public class Timeline implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
+    private static KeyManager key;
+
     private static Title titleSlide;
     private static FirstGen firstGen;
     private static SecondGen secondGen;
@@ -50,6 +52,8 @@ public class Timeline implements Runnable{
         gaben = new Gaben();
         steam = new Steam();
 
+        key = new KeyManager();
+
         Scene.setScene(titleSlide);
     }
 
@@ -57,7 +61,7 @@ public class Timeline implements Runnable{
         if (Scene.getScene() != null) {
             Scene.getScene().tick();
         }
-        KeyManager.getInstance().tick();
+        key.tick();
     }
 
     public void render(){
@@ -186,5 +190,20 @@ public class Timeline implements Runnable{
     public static SeventhGen getSeventhGen() {
         return seventhGen;
     }
-    
+
+    public static MichaelAbrash getMichaelAbrash() {
+        return michaelAbrash;
+    }
+
+    public static Gaben getGaben() {
+        return gaben;
+    }
+
+    public static Steam getSteam() {
+        return steam;
+    }
+
+    public static KeyManager getKey() {
+        return key;
+    }
 }

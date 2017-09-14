@@ -8,16 +8,7 @@ public class KeyManager implements KeyListener {
     public boolean up, down, left, right, space, e;
     private boolean[] keys;
 
-    private static KeyManager instance = null;
-
-    public static KeyManager getInstance() {
-        if(instance == null){
-            instance = new KeyManager();
-        }
-        return instance;
-    }
-
-    private KeyManager() {
+    public KeyManager() {
         keys = new boolean[256];
     }
 
@@ -28,7 +19,6 @@ public class KeyManager implements KeyListener {
         left = keys[KeyEvent.VK_A];
         space = keys[KeyEvent.VK_SPACE];
         e = keys[KeyEvent.VK_E];
-        System.out.println(up);
     }
 
     @Override
