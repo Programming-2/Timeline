@@ -14,12 +14,12 @@ public class SecondGen extends Scene{
     @Override
     public void tick() {
         if(Timeline.getKey().space) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             Scene.setScene(Timeline.getThirdGen());
-        }
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
     }
 

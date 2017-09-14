@@ -13,12 +13,12 @@ public class MichaelAbrash extends Scene{
     @Override
     public void tick() {
         if(Timeline.getKey().space) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             Scene.setScene(Timeline.getGaben());
-        }
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
     }
 
