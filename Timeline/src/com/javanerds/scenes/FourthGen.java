@@ -15,6 +15,8 @@ public class FourthGen extends Scene{
 
     @Override
     public void render(Graphics g) {
+        g.setFont(new Font("Comic Sans MS", 1, 20));
+        g.drawString("5", 0, 20);
 
     }
 }

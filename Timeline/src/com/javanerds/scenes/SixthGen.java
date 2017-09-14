@@ -1,6 +1,6 @@
 package com.javanerds.scenes;
 
-import java.awt.Graphics;
+import java.awt.*;
 
 public class SixthGen extends Scene{
 
@@ -15,6 +15,8 @@ public class SixthGen extends Scene{
 
     @Override
     public void render(Graphics g) {
+        g.setFont(new Font("Comic Sans MS", 1, 20));
+        g.drawString("7", 0, 20);
 
     }
 }
