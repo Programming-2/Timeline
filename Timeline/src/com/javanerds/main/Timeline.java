@@ -54,6 +54,8 @@ public class Timeline implements Runnable{
 
         key = new KeyManager();
 
+        window.getFrame().addKeyListener(key);
+
         Scene.setScene(titleSlide);
     }
 
