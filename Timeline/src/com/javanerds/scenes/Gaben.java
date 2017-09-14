@@ -2,9 +2,9 @@ package com.javanerds.scenes;
 
 import java.awt.*;
 
-public class GabeNewell extends Scene{
+public class Gaben extends Scene{
 
-    public GabeNewell() {
+    public Gaben() {
 
     }
 
