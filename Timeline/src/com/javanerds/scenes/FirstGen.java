@@ -17,6 +17,6 @@ public class FirstGen extends Scene{
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.gaben, 0, 0, null);
+        g.drawImage(Assets.odyessy, 0, 0, null);
     }
 }
