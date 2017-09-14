@@ -17,7 +17,7 @@ public class Gaben extends Scene{
             Scene.setScene(Timeline.getSteam());
         }
         try {
-            Thread.sleep(1000);
+            Thread.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
