@@ -15,6 +15,11 @@ public class SeventhGen extends Scene{
         if(Timeline.getKey().space) {
             Scene.setScene(Timeline.getMichaelAbrash());
         }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

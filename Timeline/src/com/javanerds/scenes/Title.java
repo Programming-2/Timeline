@@ -16,6 +16,11 @@ public class Title extends Scene {
         if(Timeline.getKey().space) {
             Scene.setScene(Timeline.getFirstGen());
         }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

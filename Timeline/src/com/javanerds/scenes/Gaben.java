@@ -16,6 +16,11 @@ public class Gaben extends Scene{
         if(Timeline.getKey().space) {
             Scene.setScene(Timeline.getSteam());
         }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

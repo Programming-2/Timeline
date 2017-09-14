@@ -15,6 +15,11 @@ public class FifthGen extends Scene{
         if(Timeline.getKey().space) {
             Scene.setScene(Timeline.getSixthGen());
         }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

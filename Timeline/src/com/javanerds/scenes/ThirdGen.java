@@ -16,6 +16,11 @@ public class ThirdGen extends Scene{
         if(Timeline.getKey().space) {
             Scene.setScene(Timeline.getFourthGen());
         }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

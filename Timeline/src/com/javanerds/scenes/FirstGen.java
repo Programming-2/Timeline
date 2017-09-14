@@ -1,6 +1,7 @@
 package com.javanerds.scenes;
 
 import com.javanerds.main.Assets;
+import com.javanerds.main.Timeline;
 
 import java.awt.*;
 
@@ -12,7 +13,14 @@ public class FirstGen extends Scene{
 
     @Override
     public void tick() {
-
+        if(Timeline.getKey().space) {
+            Scene.setScene(Timeline.getSecondGen());
+        }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
