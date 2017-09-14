@@ -16,7 +16,7 @@ public class MichaelAbrash extends Scene{
             Scene.setScene(Timeline.getGaben());
         }
         try {
-            Thread.sleep(1000);
+            Thread.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

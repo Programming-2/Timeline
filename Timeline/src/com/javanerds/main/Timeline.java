@@ -56,7 +56,7 @@ public class Timeline implements Runnable{
 
         window.getFrame().addKeyListener(key);
 
-        Scene.setScene(fifthGen);
+        Scene.setScene(titleSlide);
     }
 
     public void tick(){

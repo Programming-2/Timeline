@@ -12,7 +12,11 @@ public class Steam extends Scene{
 
     @Override
     public void tick() {
-
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
