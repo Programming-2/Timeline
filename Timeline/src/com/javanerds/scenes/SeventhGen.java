@@ -28,13 +28,13 @@ public class SeventhGen extends Scene{
         g.setFont(new Font("Comic Sans MS", 1, 20));
         g.drawString("8", 0, 20);
         g.drawImage(Assets.ps3, 650, 100, null);
-        g.drawImage(Assets.xbox360, 700, 420, null);
+        g.drawImage(Assets.xbox360, 700, 400, null);
         g.drawImage(Assets.wii, 100, 200, null);
         g.setFont(new Font("Comic Sans MS", 1, 60));
         g.drawString("Seventh Generation", 400, 50);
         g.setFont(new Font("Comic Sans MS", 1, 30));
-        g.drawString("Playstation 3, 2006", 720, 340);
-        g.drawString("Xbox 360, 2005", 770, 600);
-        g.drawString("Wii, 2006", 130, 550);
+        g.drawString("Playstation 3, 2006", 690, 310);
+        g.drawString("Xbox 360, 2005", 740, 640);
+        g.drawString("Wii, 2006", 170, 530);
     }
 }
