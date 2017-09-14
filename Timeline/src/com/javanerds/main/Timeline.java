@@ -1,9 +1,11 @@
 package com.javanerds.main;
 
 import com.javanerds.scenes.*;
+import sun.reflect.CallerSensitive;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
+import java.util.Map;
 
 public class Timeline implements Runnable{
     private Thread thread;
@@ -17,15 +19,15 @@ public class Timeline implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
-    private FirstGen firstGen;
-    private SecondGen secondGen;
-    private ThirdGen thirdGen;
-    private FourthGen fourthGen;
-    private FifthGen fifthGen;
-    private SixthGen sixthGen;
-    private SeventhGen seventhGen;
-    private EighthGen eighthGen;
-    private Title titleSlide;
+    private static FirstGen firstGen;
+    private static SecondGen secondGen;
+    private static ThirdGen thirdGen;
+    private static FourthGen fourthGen;
+    private static FifthGen fifthGen;
+    private static SixthGen sixthGen;
+    private static SeventhGen seventhGen;
+    private static EighthGen eighthGen;
+    private static Title titleSlide;
 
     public Timeline(String title, int width, int height){
         this.title = title;
@@ -45,7 +47,7 @@ public class Timeline implements Runnable{
         seventhGen = new SeventhGen();
         eighthGen = new EighthGen();
         titleSlide = new Title();
-        Scene.setScene(firstGen);
+        Scene.setScene(titleSlide);
     }
 
     public void tick(){
@@ -149,4 +151,39 @@ public class Timeline implements Runnable{
         }
     }
 
+    public static Title getTitleSlide() {
+        return titleSlide;
+    }
+
+    public static FirstGen getFirstGen() {
+        return firstGen;
+    }
+
+    public static SecondGen getSecondGen() {
+        return secondGen;
+    }
+
+    public static ThirdGen getThirdGen() {
+        return thirdGen;
+    }
+
+    public static FourthGen getFourthGen() {
+        return fourthGen;
+    }
+
+    public static FifthGen getFifthGen() {
+        return fifthGen;
+    }
+
+    public static SixthGen getSixthGen() {
+        return sixthGen;
+    }
+
+    public static SeventhGen getSeventhGen() {
+        return seventhGen;
+    }
+
+    public static EighthGen getEighthGen() {
+        return eighthGen;
+    }
 }

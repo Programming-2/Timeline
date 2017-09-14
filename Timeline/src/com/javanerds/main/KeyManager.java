@@ -8,8 +8,16 @@ public class KeyManager implements KeyListener {
     public boolean up, down, left, right, space, e;
     private boolean[] keys;
 
-    //Change to singleton
-    public KeyManager() {
+    private static KeyManager instance = null;
+
+    public static KeyManager getInstance() {
+        if(instance == null){
+            instance = new KeyManager();
+        }
+        return instance;
+    }
+
+    private KeyManager() {
         keys = new boolean[256];
     }
 
