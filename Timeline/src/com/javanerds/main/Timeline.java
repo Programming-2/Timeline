@@ -1,11 +1,9 @@
 package com.javanerds.main;
 
 import com.javanerds.scenes.*;
-import sun.reflect.CallerSensitive;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
-import java.util.Map;
 
 public class Timeline implements Runnable{
     private Thread thread;
@@ -19,6 +17,7 @@ public class Timeline implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
+    private static Title titleSlide;
     private static FirstGen firstGen;
     private static SecondGen secondGen;
     private static ThirdGen thirdGen;
@@ -26,8 +25,9 @@ public class Timeline implements Runnable{
     private static FifthGen fifthGen;
     private static SixthGen sixthGen;
     private static SeventhGen seventhGen;
-    private static EighthGen eighthGen;
-    private static Title titleSlide;
+    private static MichaelAbrash michaelAbrash;
+    private static Gaben gaben;
+    private static Steam steam;
 
     public Timeline(String title, int width, int height){
         this.title = title;
@@ -38,6 +38,7 @@ public class Timeline implements Runnable{
     private void init(){
         window = new Window(title, width, height);
         Assets.init();
+        titleSlide = new Title();
         firstGen = new FirstGen();
         secondGen = new SecondGen();
         thirdGen = new ThirdGen();
@@ -45,8 +46,10 @@ public class Timeline implements Runnable{
         fifthGen = new FifthGen();
         sixthGen = new SixthGen();
         seventhGen = new SeventhGen();
-        eighthGen = new EighthGen();
-        titleSlide = new Title();
+        michaelAbrash = new MichaelAbrash();
+        gaben = new Gaben();
+        steam = new Steam();
+
         Scene.setScene(titleSlide);
     }
 
@@ -183,8 +186,5 @@ public class Timeline implements Runnable{
     public static SeventhGen getSeventhGen() {
         return seventhGen;
     }
-
-    public static EighthGen getEighthGen() {
-        return eighthGen;
-    }
+    
 }
