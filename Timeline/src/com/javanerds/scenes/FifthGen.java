@@ -36,5 +36,8 @@ public class FifthGen extends Scene{
         g.drawString("Sega Saturn, 1995", 140, 310);
         g.drawString("Sony Playstation, 1995", 770, 600);
         g.drawString("Nintendo 64, 1996", 115, 640);
+        g.drawString("featured Sony's entrance into", 500, 200);
+        g.drawString("the console generations", 550, 250);
+        g.drawString("and Sega's last successful console", 550, 300);
     }
 }

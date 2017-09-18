@@ -36,5 +36,6 @@ public class SixthGen extends Scene{
         g.drawString("Gamecube, 2001", 720, 340);
         g.drawString("Xbox, 2001", 770, 600);
         g.drawString("Playstation 2, 2000", 130, 550);
+        g.drawString("most successful console ever (155 million sold)", 20, 600);
     }
 }
