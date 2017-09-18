@@ -32,6 +32,8 @@ public class FourthGen extends Scene{
         g.setFont(new Font("Comic Sans MS", 1, 30));
         g.drawString("Sega Genesis, 1989", 180, 280);
         g.drawString("Super NES, 1991", 720, 600);
+        g.drawString("featured first use of 16-bit graphics", 100, 400);
+        g.drawString("and major Sega vs. Nintendo rivalry", 100, 450);
         g.setFont(new Font("Comic Sans MS", 1, 20));
         g.drawString("5", 0, 20);
 
