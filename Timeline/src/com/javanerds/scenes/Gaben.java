@@ -15,7 +15,7 @@ public class Gaben extends Scene{
     public void tick() {
         if(Timeline.getKey().space) {
             try {
-                Thread.sleep(100);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
