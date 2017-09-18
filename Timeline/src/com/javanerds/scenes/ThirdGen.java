@@ -29,8 +29,8 @@ public class ThirdGen extends Scene{
         g.drawString("4", 0, 20);
         g.drawImage(Assets.atari7800, 180, 100, null);
         g.drawImage(Assets.nes, 700, 400, null);
-        g.setFont(new Font("Comic Sans MS", 1, 60));
-        g.drawString("Third Generation", 400, 50);
+        g.setFont(new Font("Comic Sans MS", 1, 40));
+        g.drawString("Third Generation (1985-1988)", 400, 50);
         g.setFont(new Font("Comic Sans MS", 1, 30));
         g.drawString("Atari 7800, 1986", 200, 280);
         g.drawString("NES, 1985", 770, 600);

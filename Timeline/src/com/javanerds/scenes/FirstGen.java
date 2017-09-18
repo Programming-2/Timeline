@@ -29,7 +29,7 @@ public class FirstGen extends Scene{
         g.drawString("2", 0, 20);
         g.drawImage(Assets.odyessy, 100, 175, null);
         g.setFont(new Font("Comic Sans MS", 1, 40));
-        g.drawString("First Generation of Consoles", 200, 50);
+        g.drawString("First Generation of Consoles (1974-1976)", 200, 50);
         g.setFont(new Font("Comic Sans MS", 1, 30));
         g.drawString("The Atari Odyessy", 500, 200);
         g.drawString("1974", 500, 250);

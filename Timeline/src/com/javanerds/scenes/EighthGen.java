@@ -5,9 +5,9 @@ import com.javanerds.main.Timeline;
 
 import java.awt.*;
 
-public class SixthGen extends Scene{
+public class EighthGen extends Scene{
 
-    public SixthGen() {
+    public EighthGen() {
 
     }
 
@@ -19,22 +19,22 @@ public class SixthGen extends Scene{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            Scene.setScene(Timeline.getSeventhGen());
+            Scene.setScene(Timeline.getMichaelAbrash());
         }
     }
 
     @Override
     public void render(Graphics g) {
         g.setFont(new Font("Comic Sans MS", 1, 20));
-        g.drawString("7", 0, 20);
-        g.drawImage(Assets.gamecube, 650, 100, null);
-        g.drawImage(Assets.xbox, 700, 420, null);
-        g.drawImage(Assets.ps2, 100, 200, null);
+        g.drawString("8", 0, 20);
+        g.drawImage(Assets.ps4, 650, 100, null);
+        g.drawImage(Assets.xbox1, 700, 400, null);
+        g.drawImage(Assets.wiiu, 100, 200, null);
         g.setFont(new Font("Comic Sans MS", 1, 40));
-        g.drawString("Sixth Generation (2000-2004)", 400, 50);
+        g.drawString("Eighth Generation (2013-present)", 400, 50);
         g.setFont(new Font("Comic Sans MS", 1, 30));
-        g.drawString("Gamecube, 2001", 720, 340);
-        g.drawString("Xbox, 2001", 770, 600);
-        g.drawString("Playstation 2, 2000", 130, 550);
+        g.drawString("Playstation 4, 2013", 650, 300);
+        g.drawString("Xbox One, 2013", 720, 550);
+        g.drawString("Wii U, 2012", 170, 400);
     }
 }

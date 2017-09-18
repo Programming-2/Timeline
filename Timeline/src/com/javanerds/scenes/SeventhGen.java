@@ -19,7 +19,7 @@ public class SeventhGen extends Scene{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            Scene.setScene(Timeline.getMichaelAbrash());
+            Scene.setScene(Timeline.getEighthGen());
         }
     }
 
@@ -30,8 +30,8 @@ public class SeventhGen extends Scene{
         g.drawImage(Assets.ps3, 650, 100, null);
         g.drawImage(Assets.xbox360, 700, 400, null);
         g.drawImage(Assets.wii, 100, 200, null);
-        g.setFont(new Font("Comic Sans MS", 1, 60));
-        g.drawString("Seventh Generation", 400, 50);
+        g.setFont(new Font("Comic Sans MS", 1, 40));
+        g.drawString("Seventh Generation (2005-2011)", 400, 50);
         g.setFont(new Font("Comic Sans MS", 1, 30));
         g.drawString("Playstation 3, 2006", 690, 310);
         g.drawString("Xbox 360, 2005", 740, 640);

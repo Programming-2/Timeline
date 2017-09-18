@@ -30,8 +30,8 @@ public class FifthGen extends Scene{
         g.drawImage(Assets.saturn, 180, 100, null);
         g.drawImage(Assets.playstation, 810, 450, null);
         g.drawImage(Assets.n64, 100, 450, null);
-        g.setFont(new Font("Comic Sans MS", 1, 60));
-        g.drawString("Fifth Generation", 400, 50);
+        g.setFont(new Font("Comic Sans MS", 1, 40));
+        g.drawString("Fifth Generation (1995-1999)", 400, 50);
         g.setFont(new Font("Comic Sans MS", 1, 30));
         g.drawString("Sega Saturn, 1995", 140, 310);
         g.drawString("Sony Playstation, 1995", 770, 600);

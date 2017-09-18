@@ -27,6 +27,7 @@ public class Timeline implements Runnable{
     private static FifthGen fifthGen;
     private static SixthGen sixthGen;
     private static SeventhGen seventhGen;
+    private static EighthGen eighthGen;
     private static MichaelAbrash michaelAbrash;
     private static Gaben gaben;
     private static Steam steam;
@@ -48,6 +49,7 @@ public class Timeline implements Runnable{
         fifthGen = new FifthGen();
         sixthGen = new SixthGen();
         seventhGen = new SeventhGen();
+        eighthGen = new EighthGen();
         michaelAbrash = new MichaelAbrash();
         gaben = new Gaben();
         steam = new Steam();
@@ -191,6 +193,10 @@ public class Timeline implements Runnable{
 
     public static SeventhGen getSeventhGen() {
         return seventhGen;
+    }
+
+    public static EighthGen getEighthGen() {
+        return eighthGen;
     }
 
     public static MichaelAbrash getMichaelAbrash() {

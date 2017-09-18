@@ -25,9 +25,16 @@ public class MichaelAbrash extends Scene{
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.michaelabrash, 100, 75, null);
+        g.drawImage(Assets.michaelabrash, 250, 175, null);
         g.setFont(new Font("Comic Sans MS", 1, 20));
         g.drawString("9", 0, 20);
+        g.setFont(new Font("Comic Sans MS", 1, 40));
+        g.drawString("Michael Abrash (2001-present)", 200, 150);
+        g.setFont(new Font("Comic Sans MS", 1, 30));
+        g.drawString("important 21st century computer scientist", 450, 250);
+        g.drawString("helped develop Microsoft Xbox in 2001", 450, 300);
+        g.drawString("currently Chief Scientist for Oculus VR", 450, 350);
+        g.drawString("inspiration to many after him, such as...", 450, 400);
 
     }
 }

@@ -29,7 +29,7 @@ public class Gaben extends Scene{
         g.setFont(new Font("Comic Sans MS", 1, 20));
         g.drawString("10", 0, 20);
         g.setFont(new Font("Comic Sans MS", 1, 40));
-        g.drawString("Gabe Newell", 200, 50);
+        g.drawString("Gabe Newell (1996-present)", 200, 50);
         g.setFont(new Font("Comic Sans MS", 1, 30));
         g.drawString("born November 3, 1962 in Seattle, WA", 550, 150);
         g.drawString("president and co-founder of Valve", 550, 200);
