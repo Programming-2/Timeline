@@ -15,7 +15,7 @@ public class ThirdGen extends Scene{
     public void tick() {
         if(Timeline.getKey().space) {
             try {
-                Thread.sleep(100);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -34,5 +34,7 @@ public class ThirdGen extends Scene{
         g.setFont(new Font("Comic Sans MS", 1, 30));
         g.drawString("Atari 7800, 1986", 200, 280);
         g.drawString("NES, 1985", 770, 600);
+        g.drawString("NES was first console w/ D-Pad", 150, 450);
+        g.drawString("& Nintendo's first successful console", 150, 500);
     }
 }
